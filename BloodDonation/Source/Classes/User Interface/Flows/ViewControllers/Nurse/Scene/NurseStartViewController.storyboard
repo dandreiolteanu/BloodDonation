@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ofs-03-CqK">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Calibre-Medium.otf">
+            <string>Calibre-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Nurse Start View Controller-->
+        <scene sceneID="gBO-u3-yiH">
+            <objects>
+                <viewController id="Ofs-03-CqK" customClass="NurseStartViewController" customModule="BloodDonation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KQZ-bE-8wh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Mq4-w6-V0R">
+                                <rect key="frame" x="-15" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J6h-b8-mbu">
+                                <rect key="frame" x="279" y="59" width="80" height="34"/>
+                                <color key="backgroundColor" red="0.71831376899999999" green="0.71831376899999999" blue="0.71831376899999999" alpha="0.096318493150000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Yg9-V7-Wf8"/>
+                                    <constraint firstAttribute="height" constant="34" id="wrr-7a-jdb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="Log Out">
+                                    <color key="titleColor" red="1" green="0.13725490200000001" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="17"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="logOutButtonTapped:" destination="Ofs-03-CqK" eventType="touchUpInside" id="s4m-Po-v82"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nurse Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3m4-OF-1de">
+                                <rect key="frame" x="16.000000000000007" y="65.333333333333329" width="102.66666666666669" height="21.666666666666671"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="ohz-a4-EtD">
+                                <rect key="frame" x="56" y="216.00000000000003" width="262.66666666666669" height="380.66666666666674"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Sje-Mh-7jA">
+                                        <rect key="frame" x="0.0" y="0.0" width="262.66666666666669" height="125"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NK2-8T-CtS">
+                                                <rect key="frame" x="0.0" y="0.0" width="262.66666666666669" height="50"/>
+                                                <color key="backgroundColor" red="1" green="0.13725490200000001" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="NRm-nP-ReV"/>
+                                                </constraints>
+                                                <state key="normal" title="See All Donors">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="7"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="seeAllDonorsButtonTapped:" destination="Ofs-03-CqK" eventType="touchUpInside" id="VbP-c4-nUl"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="spR-Gw-564">
+                                                <rect key="frame" x="0.0" y="75" width="262.66666666666669" height="50"/>
+                                                <color key="backgroundColor" red="1" green="0.13725490200000001" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="2Sl-Sk-f3U"/>
+                                                </constraints>
+                                                <state key="normal" title="See Blood Requests">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="7"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="seeBloodRequestsButtonTapped:" destination="Ofs-03-CqK" eventType="touchUpInside" id="sg7-cg-xfa"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="se6-GU-cTn">
+                                        <rect key="frame" x="0.0" y="185" width="262.66666666666669" height="195.66666666666663"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a new Patient" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OiU-Ep-nXF">
+                                                <rect key="frame" x="0.0" y="0.0" width="262.66666666666669" height="20.666666666666668"/>
+                                                <fontDescription key="fontDescription" name="Calibre-Medium" family="Calibre" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Patient Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dvm-RH-MUG" customClass="RoundedBorderTextField" customModule="BloodDonation" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="35.666666666666686" width="262.66666666666669" height="50"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="s0g-tk-gJb"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1vx-9x-ngi">
+                                                <rect key="frame" x="0.0" y="100.66666666666669" width="262.66666666666669" height="30"/>
+                                                <state key="normal" title="Select Blood Type">
+                                                    <color key="titleColor" red="1" green="0.13725490200000001" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="selectBloodTypePressed:" destination="Ofs-03-CqK" eventType="touchUpInside" id="ko6-6s-eun"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ORe-o0-9Nk">
+                                                <rect key="frame" x="0.0" y="145.66666666666663" width="262.66666666666669" height="50"/>
+                                                <color key="backgroundColor" red="1" green="0.13725490200000001" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Wnh-r6-PMk"/>
+                                                </constraints>
+                                                <state key="normal" title="Add Pacient">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="7"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="addPacientButtonTapped:" destination="Ofs-03-CqK" eventType="touchUpInside" id="KXf-IC-Sfq"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Mq4-w6-V0R" secondAttribute="bottom" id="1UG-j5-awX"/>
+                            <constraint firstItem="J6h-b8-mbu" firstAttribute="top" secondItem="jIe-0P-lH5" secondAttribute="top" constant="15" id="2CM-BM-Nss"/>
+                            <constraint firstItem="ohz-a4-EtD" firstAttribute="centerX" secondItem="KQZ-bE-8wh" secondAttribute="centerX" id="6yf-Br-7Zu"/>
+                            <constraint firstItem="jIe-0P-lH5" firstAttribute="trailing" secondItem="J6h-b8-mbu" secondAttribute="trailing" constant="16" id="IVX-vI-qwR"/>
+                            <constraint firstItem="NK2-8T-CtS" firstAttribute="width" secondItem="Mq4-w6-V0R" secondAttribute="width" multiplier="0.7" id="MfO-vQ-hLl"/>
+                            <constraint firstItem="3m4-OF-1de" firstAttribute="leading" secondItem="jIe-0P-lH5" secondAttribute="leading" constant="16" id="fNB-Vg-Jh6"/>
+                            <constraint firstItem="Mq4-w6-V0R" firstAttribute="leading" secondItem="jIe-0P-lH5" secondAttribute="leading" constant="-15" id="hu5-Ma-Fl4"/>
+                            <constraint firstItem="ohz-a4-EtD" firstAttribute="centerY" secondItem="KQZ-bE-8wh" secondAttribute="centerY" id="iwc-tX-TMD"/>
+                            <constraint firstItem="Mq4-w6-V0R" firstAttribute="top" secondItem="KQZ-bE-8wh" secondAttribute="top" id="qLm-GJ-hfJ"/>
+                            <constraint firstItem="Mq4-w6-V0R" firstAttribute="trailing" secondItem="jIe-0P-lH5" secondAttribute="trailing" constant="-15" id="sn5-Al-P46"/>
+                            <constraint firstItem="3m4-OF-1de" firstAttribute="centerY" secondItem="J6h-b8-mbu" secondAttribute="centerY" id="z2v-hw-Wwz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jIe-0P-lH5"/>
+                    </view>
+                    <connections>
+                        <outlet property="addPatientButton" destination="ORe-o0-9Nk" id="F5D-qg-CG1"/>
+                        <outlet property="nurseNameLabel" destination="3m4-OF-1de" id="Kkq-R8-8Lb"/>
+                        <outlet property="patientNameTextField" destination="dvm-RH-MUG" id="0OO-w8-oWP"/>
+                        <outlet property="selectBloodTypeButton" destination="1vx-9x-ngi" id="u9U-gH-tJd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KC9-2o-I9i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="69.599999999999994" y="62.807881773399018"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="375" height="812"/>
+    </resources>
+</document>

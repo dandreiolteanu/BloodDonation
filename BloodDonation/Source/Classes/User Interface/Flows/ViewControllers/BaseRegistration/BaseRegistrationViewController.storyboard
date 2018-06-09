@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oup-UG-gW2">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Calibre-Medium.otf">
+            <string>Calibre-Medium</string>
+        </array>
+        <array key="Calibre-Semibold.otf">
+            <string>Calibre-Semibold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Base Registration View Controller-->
+        <scene sceneID="QE1-IJ-HpL">
+            <objects>
+                <viewController id="oup-UG-gW2" customClass="BaseRegistrationViewController" customModule="BloodDonation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ggK-fT-pQa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hmT-WH-bnF">
+                                <rect key="frame" x="16" y="84" width="177.66666666666666" height="36"/>
+                                <fontDescription key="fontDescription" name="Calibre-Semibold" family="Calibre" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPb-64-otE">
+                                <rect key="frame" x="65.999999999999986" y="300" width="243.66666666666663" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.13725490200000001" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="vKf-Fh-fzd"/>
+                                </constraints>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="continueButtonPressed:" destination="oup-UG-gW2" eventType="touchUpInside" id="wvY-0C-S9n"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="BQb-KO-gca">
+                                <rect key="frame" x="56.333333333333343" y="160" width="262.33333333333326" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nTM-ra-kUx">
+                                        <rect key="frame" x="0.0" y="0.0" width="262.33333333333331" height="50"/>
+                                        <fontDescription key="fontDescription" name="Calibre-Medium" family="Calibre" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="262.33333333333331" placeholderIntrinsicHeight="100" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OTg-1Q-LXj" customClass="RoundedBorderTextField" customModule="BloodDonation" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="262.33333333333331" height="50"/>
+                                        <color key="backgroundColor" red="0.96393468127684501" green="0.95927799199531438" blue="0.96859137055837563" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="cnr-Uz-oKt"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BQb-KO-gca" firstAttribute="top" secondItem="hmT-WH-bnF" secondAttribute="bottom" constant="40" id="737-ah-8hH"/>
+                            <constraint firstItem="BQb-KO-gca" firstAttribute="width" secondItem="ggK-fT-pQa" secondAttribute="width" multiplier="0.7" id="JVv-BA-KwE"/>
+                            <constraint firstItem="hmT-WH-bnF" firstAttribute="top" secondItem="beE-Lh-Y5i" secondAttribute="top" constant="40" id="OOT-H5-Wtd"/>
+                            <constraint firstItem="FPb-64-otE" firstAttribute="width" secondItem="ggK-fT-pQa" secondAttribute="width" multiplier="0.65" id="XJM-8r-fQD"/>
+                            <constraint firstItem="BQb-KO-gca" firstAttribute="centerX" secondItem="ggK-fT-pQa" secondAttribute="centerX" id="aIP-yo-gof"/>
+                            <constraint firstItem="FPb-64-otE" firstAttribute="top" secondItem="BQb-KO-gca" secondAttribute="bottom" constant="40" id="hLi-yJ-lxP"/>
+                            <constraint firstItem="hmT-WH-bnF" firstAttribute="leading" secondItem="beE-Lh-Y5i" secondAttribute="leading" constant="16" id="oyv-Cf-G2q"/>
+                            <constraint firstItem="FPb-64-otE" firstAttribute="centerX" secondItem="ggK-fT-pQa" secondAttribute="centerX" id="uGZ-eQ-dNP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="beE-Lh-Y5i"/>
+                    </view>
+                    <connections>
+                        <outlet property="nameTextField" destination="OTg-1Q-LXj" id="n1A-tN-sRI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ATF-aR-6S2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-140" y="139"/>
+        </scene>
+    </scenes>
+</document>

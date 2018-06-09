@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sGo-WC-c5g">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Calibre-Medium.otf">
+            <string>Calibre-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--All Donors View Controller-->
+        <scene sceneID="0Bg-c9-0Fk">
+            <objects>
+                <viewController id="sGo-WC-c5g" customClass="AllDonorsViewController" customModule="BloodDonation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8eI-8v-d9D">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="l7T-Tu-pIu">
+                                <rect key="frame" x="0.0" y="44" width="375" height="768"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="donorCell" rowHeight="78" id="bJt-bR-vKP" customClass="DonorCell" customModule="BloodDonation" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="78"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bJt-bR-vKP" id="snQ-9X-yTZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="77.666666666666671"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donor Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2X-LE-AgE">
+                                                    <rect key="frame" x="14.999999999999993" y="13.000000000000002" width="98.333333333333314" height="20.666666666666671"/>
+                                                    <fontDescription key="fontDescription" name="Calibre-Medium" family="Calibre" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blood Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ivn-sA-CSY">
+                                                    <rect key="frame" x="271" y="13.000000000000002" width="89" height="20.666666666666671"/>
+                                                    <fontDescription key="fontDescription" name="Calibre-Medium" family="Calibre" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From Cluj Napoca" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WzQ-1M-rGO">
+                                                    <rect key="frame" x="15" y="41.666666666666664" width="129" height="20"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x6N-GW-iSC">
+                                                    <rect key="frame" x="305.66666666666669" y="41.666666666666664" width="21" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="0.13725490200000001" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="X2X-LE-AgE" firstAttribute="leading" secondItem="snQ-9X-yTZ" secondAttribute="leadingMargin" id="ATT-pK-LU1"/>
+                                                <constraint firstItem="WzQ-1M-rGO" firstAttribute="top" secondItem="X2X-LE-AgE" secondAttribute="bottom" constant="8" id="Kj8-w3-y4b"/>
+                                                <constraint firstItem="x6N-GW-iSC" firstAttribute="centerX" secondItem="ivn-sA-CSY" secondAttribute="centerX" id="VmM-fW-Txa"/>
+                                                <constraint firstItem="ivn-sA-CSY" firstAttribute="top" secondItem="snQ-9X-yTZ" secondAttribute="topMargin" constant="2" id="cYT-pC-1lL"/>
+                                                <constraint firstItem="X2X-LE-AgE" firstAttribute="top" secondItem="snQ-9X-yTZ" secondAttribute="topMargin" constant="2" id="dfY-Xk-67V"/>
+                                                <constraint firstItem="WzQ-1M-rGO" firstAttribute="leading" secondItem="snQ-9X-yTZ" secondAttribute="leadingMargin" id="doT-I8-RzL"/>
+                                                <constraint firstItem="x6N-GW-iSC" firstAttribute="top" secondItem="ivn-sA-CSY" secondAttribute="bottom" constant="8" id="lla-QG-gO2"/>
+                                                <constraint firstItem="ivn-sA-CSY" firstAttribute="trailing" secondItem="snQ-9X-yTZ" secondAttribute="trailingMargin" id="w4v-lK-Gh5"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="bloodTypeLabel" destination="x6N-GW-iSC" id="0o4-6k-DUB"/>
+                                            <outlet property="cityLabel" destination="WzQ-1M-rGO" id="LrL-zb-zYt"/>
+                                            <outlet property="nameLabel" destination="X2X-LE-AgE" id="iKc-p6-5o5"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="l7T-Tu-pIu" secondAttribute="bottom" id="3XW-Xz-LcC"/>
+                            <constraint firstItem="l7T-Tu-pIu" firstAttribute="trailing" secondItem="JGz-u2-hV3" secondAttribute="trailing" id="PXg-oK-C7w"/>
+                            <constraint firstItem="l7T-Tu-pIu" firstAttribute="top" secondItem="JGz-u2-hV3" secondAttribute="top" id="XN4-Ja-cZj"/>
+                            <constraint firstItem="l7T-Tu-pIu" firstAttribute="leading" secondItem="JGz-u2-hV3" secondAttribute="leading" id="Xr2-yT-Rfz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JGz-u2-hV3"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="l7T-Tu-pIu" id="hb7-Eb-piw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Mu-o6-AmL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4" y="-93.103448275862078"/>
+        </scene>
+    </scenes>
+</document>

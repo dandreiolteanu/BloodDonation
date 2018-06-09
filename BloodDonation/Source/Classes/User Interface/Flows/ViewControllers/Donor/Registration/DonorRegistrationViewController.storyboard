@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VKq-pe-eur">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Calibre-Medium.otf">
+            <string>Calibre-Medium</string>
+        </array>
+        <array key="Calibre-Regular.otf">
+            <string>Calibre-Regular</string>
+        </array>
+        <array key="Calibre-Semibold.otf">
+            <string>Calibre-Semibold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Donor Registration View Controller-->
+        <scene sceneID="Z6e-yZ-pb2">
+            <objects>
+                <viewController id="VKq-pe-eur" customClass="DonorRegistrationViewController" customModule="BloodDonation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5gQ-wW-SDy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLx-Ul-elT">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1100"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xc7-i7-YC4">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="916"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Kl6-gR-ZJv">
+                                                <rect key="frame" x="16" y="40" width="343" height="1160"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Pln-N4-Mby">
+                                                        <rect key="frame" x="9.6666666666666572" y="0.0" width="323.66666666666674" height="1080"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mwj-l9-xvl">
+                                                                <rect key="frame" x="0.0" y="0.0" width="288" height="82.333333333333329"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registration" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xyK-1S-P62">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="288" height="36"/>
+                                                                        <fontDescription key="fontDescription" name="Calibre-Semibold" family="Calibre" pointSize="36"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Complete this form and wait for a nurses validation, it should take about 2 minutes." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rkL-HF-XUB">
+                                                                        <rect key="frame" x="0.0" y="46" width="288" height="36.333333333333343"/>
+                                                                        <fontDescription key="fontDescription" name="Calibre-Regular" family="Calibre" pointSize="18"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="rkL-HF-XUB" firstAttribute="width" secondItem="mwj-l9-xvl" secondAttribute="width" id="N4X-id-NEG"/>
+                                                                    <constraint firstItem="xyK-1S-P62" firstAttribute="width" secondItem="mwj-l9-xvl" secondAttribute="width" id="uhG-wx-Rhq"/>
+                                                                </constraints>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wCJ-mL-ytk">
+                                                                <rect key="frame" x="0.0" y="107.33333333333334" width="262.66666666666669" height="72.666666666666657"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dH-eK-VRU">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="262.66666666666669" height="22.666666666666668"/>
+                                                                        <fontDescription key="fontDescription" name="Calibre-Medium" family="Calibre" pointSize="22"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rui-x9-1Fq" customClass="RoundedBorderTextField" customModule="BloodDonation" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="32.666666666666657" width="262.66666666666669" height="40"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="40" id="Wv4-5Q-RkQ"/>
+                                                                        </constraints>
+                                                                        <nil key="textColor"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                        <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                <real key="value" value="8"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </textField>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ojh-mf-tIJ">
+                                                                <rect key="frame" x="0.0" y="205" width="262.66666666666669" height="72.666666666666686"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ULL-Il-UUI">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="262.66666666666669" height="22.666666666666668"/>
+                                                                        <fontDescription key="fontDescription" name="Calibre-Medium" family="Calibre" pointSize="22"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7y8-Or-gUJ" customClass="RoundedBorderTextField" customModule="BloodDonation" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="32.666666666666686" width="262.66666666666669" height="40"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="40" id="USE-oO-Jyl"/>
+                                                                        </constraints>
+                                                                        <nil key="textColor"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                        <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                <real key="value" value="8"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </textField>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Us6-HV-4pe">
+                                                                <rect key="frame" x="0.0" y="302.66666666666669" width="262.66666666666669" height="72.666666666666686"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qd8-4a-0qL">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="36" height="22.666666666666668"/>
+                                                                        <fontDescription key="fontDescription" name="Calibre-Medium" family="Calibre" pointSize="22"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a24-8w-mqb" customClass="RoundedBorderTextField" customModule="BloodDonation" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="32.666666666666629" width="262.66666666666669" height="40"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="40" id="QIu-1h-beJ"/>
+                                                                        </constraints>
+                                                                        <nil key="textColor"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                        <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                                                                    </textField>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Eem-Pg-uEU">
+                                                                <rect key="frame" x="0.0" y="400.33333333333331" width="262.66666666666669" height="72.666666666666686"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="County" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WWq-uD-DwS">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="63.333333333333336" height="22.666666666666668"/>
+                                                                        <fontDescription key="fontDescription" name="Calibre-Medium" family="Calibre" pointSize="22"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="County" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="84Z-by-rai" customClass="RoundedBorderTextField" customModule="BloodDonation" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="32.666666666666686" width="262.66666666666669" height="40"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="40" id="C6c-G3-uVK"/>
+                                                                        </constraints>
+                                                                        <nil key="textColor"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                        <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                                                                    </textField>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="s7i-fB-MWc">
+                                                                <rect key="frame" x="0.0" y="498.00000000000006" width="262.66666666666669" height="72.666666666666686"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y3K-WY-W3K">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="72.666666666666671" height="22.666666666666668"/>
+                                                                        <fontDescription key="fontDescription" name="Calibre-Medium" family="Calibre" pointSize="22"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2ia-Cd-2Ie" customClass="RoundedBorderTextField" customModule="BloodDonation" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="32.666666666666629" width="262.66666666666669" height="40"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="40" id="cSk-pn-NVl"/>
+                                                                        </constraints>
+                                                                        <nil key="textColor"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                        <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                                                                    </textField>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="KbP-xa-x1l">
+                                                                <rect key="frame" x="0.0" y="595.66666666666663" width="323.66666666666669" height="100"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Residence" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0IZ-9x-4Dx">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="89.333333333333329" height="22.666666666666668"/>
+                                                                        <fontDescription key="fontDescription" name="Calibre-Medium" family="Calibre" pointSize="22"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3yg-5S-geD" customClass="RoundedBorderTextField" customModule="BloodDonation" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="32.666666666666742" width="262.66666666666669" height="40"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="40" id="A7J-9x-Pfa"/>
+                                                                        </constraints>
+                                                                        <nil key="textColor"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                        <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                                                                    </textField>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you live at another address than in your ID card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aNC-99-4KY">
+                                                                        <rect key="frame" x="0.0" y="82.666666666666742" width="323.66666666666669" height="17.333333333333329"/>
+                                                                        <fontDescription key="fontDescription" name="Calibre-Regular" family="Calibre" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7qu-cD-C0P">
+                                                                <rect key="frame" x="0.0" y="720.66666666666663" width="74" height="96.333333333333371"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vbm-vi-Nf6">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="35" height="22.666666666666668"/>
+                                                                        <fontDescription key="fontDescription" name="Calibre-Medium" family="Calibre" pointSize="22"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pli-ON-15e">
+                                                                        <rect key="frame" x="0.0" y="32.666666666666742" width="74" height="63.666666666666657"/>
+                                                                        <state key="normal" title="Select Age">
+                                                                            <color key="titleColor" red="1" green="0.13725490200000001" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="selectAgeButtonTapped:" destination="VKq-pe-eur" eventType="touchUpInside" id="4wc-iV-wiR"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ECo-Es-spw">
+                                                                <rect key="frame" x="0.0" y="842" width="96" height="62.666666666666629"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Weight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsJ-l5-KNP">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="61.666666666666664" height="22.666666666666668"/>
+                                                                        <fontDescription key="fontDescription" name="Calibre-Medium" family="Calibre" pointSize="22"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZA-kO-Zgc">
+                                                                        <rect key="frame" x="0.0" y="32.666666666666629" width="96" height="30"/>
+                                                                        <state key="normal" title="Select Weight">
+                                                                            <color key="titleColor" red="1" green="0.13725490200000001" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="selectWeightButtonTapped:" destination="VKq-pe-eur" eventType="touchUpInside" id="bIk-eM-Aqy"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="FU9-Wd-suZ">
+                                                                <rect key="frame" x="0.0" y="929.66666666666663" width="117" height="62.666666666666629"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Birth Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TIY-Fm-te2">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="88.666666666666671" height="22.666666666666668"/>
+                                                                        <fontDescription key="fontDescription" name="Calibre-Medium" family="Calibre" pointSize="22"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyL-KW-Soq">
+                                                                        <rect key="frame" x="0.0" y="32.666666666666742" width="117" height="30"/>
+                                                                        <state key="normal" title="Select Birth Date">
+                                                                            <color key="titleColor" red="1" green="0.13725490200000001" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="selectBirthDateButtonTapped:" destination="VKq-pe-eur" eventType="touchUpInside" id="3pp-kd-YuR"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Az0-w6-EUj">
+                                                                <rect key="frame" x="0.0" y="1017.3333333333331" width="124" height="62.666666666666629"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Blood Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDl-wd-50f">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="97.666666666666671" height="22.666666666666668"/>
+                                                                        <fontDescription key="fontDescription" name="Calibre-Medium" family="Calibre" pointSize="22"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="98r-el-JAQ">
+                                                                        <rect key="frame" x="0.0" y="32.666666666666742" width="124" height="30"/>
+                                                                        <state key="normal" title="Select Blood Type">
+                                                                            <color key="titleColor" red="1" green="0.13725490200000001" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="selectBloodButtonTapped:" destination="VKq-pe-eur" eventType="touchUpInside" id="68c-Zt-GFu"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="prr-mr-ag2">
+                                                        <rect key="frame" x="40.333333333333343" y="1110" width="262.33333333333326" height="50"/>
+                                                        <color key="backgroundColor" red="1" green="0.13725490200000001" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="KDM-Ee-fNU"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Send Registration">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="sendRegistrationButtonTapped:" destination="VKq-pe-eur" eventType="touchUpInside" id="HR2-dp-yB6"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="Kl6-gR-ZJv" firstAttribute="leading" secondItem="Xc7-i7-YC4" secondAttribute="leading" constant="16" id="4oz-8Q-Z5e"/>
+                                            <constraint firstItem="2ia-Cd-2Ie" firstAttribute="width" secondItem="Xc7-i7-YC4" secondAttribute="width" multiplier="0.7" id="R6n-cN-I3E"/>
+                                            <constraint firstItem="prr-mr-ag2" firstAttribute="width" secondItem="Xc7-i7-YC4" secondAttribute="width" multiplier="0.7" id="ZuP-88-D9T"/>
+                                            <constraint firstItem="7y8-Or-gUJ" firstAttribute="width" secondItem="Xc7-i7-YC4" secondAttribute="width" multiplier="0.7" id="bKa-dv-7cc"/>
+                                            <constraint firstAttribute="bottom" secondItem="Kl6-gR-ZJv" secondAttribute="bottom" id="bMq-Vv-j1G"/>
+                                            <constraint firstItem="Kl6-gR-ZJv" firstAttribute="top" secondItem="Xc7-i7-YC4" secondAttribute="top" constant="40" id="c5l-ox-3qx"/>
+                                            <constraint firstItem="84Z-by-rai" firstAttribute="width" secondItem="Xc7-i7-YC4" secondAttribute="width" multiplier="0.7" id="oZA-LL-7ja"/>
+                                            <constraint firstItem="wCJ-mL-ytk" firstAttribute="width" secondItem="Xc7-i7-YC4" secondAttribute="width" multiplier="0.7" id="rJu-H1-yxG"/>
+                                            <constraint firstAttribute="trailing" secondItem="Kl6-gR-ZJv" secondAttribute="trailing" constant="16" id="s4a-nI-Zd5"/>
+                                            <constraint firstItem="a24-8w-mqb" firstAttribute="width" secondItem="Xc7-i7-YC4" secondAttribute="width" multiplier="0.7" id="ws8-qP-HNg"/>
+                                            <constraint firstItem="3yg-5S-geD" firstAttribute="width" secondItem="Xc7-i7-YC4" secondAttribute="width" multiplier="0.7" id="zGs-A6-F2S"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Xc7-i7-YC4" firstAttribute="top" secondItem="mLx-Ul-elT" secondAttribute="top" id="8lU-qK-VSe"/>
+                                    <constraint firstAttribute="bottom" secondItem="Xc7-i7-YC4" secondAttribute="bottom" id="bCO-55-LwO"/>
+                                    <constraint firstAttribute="trailing" secondItem="Xc7-i7-YC4" secondAttribute="trailing" id="ln3-bU-XDp"/>
+                                    <constraint firstItem="Xc7-i7-YC4" firstAttribute="leading" secondItem="mLx-Ul-elT" secondAttribute="leading" id="o56-7H-gDY"/>
+                                    <constraint firstItem="Xc7-i7-YC4" firstAttribute="width" secondItem="mLx-Ul-elT" secondAttribute="width" id="uFZ-qr-9qa"/>
+                                    <constraint firstItem="Xc7-i7-YC4" firstAttribute="height" secondItem="mLx-Ul-elT" secondAttribute="height" priority="250" id="xKf-RC-vW3"/>
+                                </constraints>
+                            </scrollView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="juU-KW-ahk">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="36"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="v1I-uP-fzK">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="36"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="Smv-LK-idw"/>
+                                </constraints>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="juU-KW-ahk" firstAttribute="leading" secondItem="5gQ-wW-SDy" secondAttribute="leading" id="5V5-OU-0hw"/>
+                            <constraint firstItem="mLx-Ul-elT" firstAttribute="leading" secondItem="RA4-u1-OZn" secondAttribute="leading" id="6xv-ju-5nc"/>
+                            <constraint firstAttribute="trailing" secondItem="juU-KW-ahk" secondAttribute="trailing" id="Xus-Z4-46g"/>
+                            <constraint firstItem="mLx-Ul-elT" firstAttribute="trailing" secondItem="RA4-u1-OZn" secondAttribute="trailing" id="ZzO-tc-gsW"/>
+                            <constraint firstItem="mLx-Ul-elT" firstAttribute="top" secondItem="5gQ-wW-SDy" secondAttribute="top" id="auZ-wW-0r8"/>
+                            <constraint firstAttribute="bottom" secondItem="mLx-Ul-elT" secondAttribute="bottom" id="hf2-NB-yl9"/>
+                            <constraint firstItem="juU-KW-ahk" firstAttribute="top" secondItem="5gQ-wW-SDy" secondAttribute="top" id="tAi-BQ-O4i"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RA4-u1-OZn"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="1200"/>
+                    <connections>
+                        <outlet property="addressTextField" destination="2ia-Cd-2Ie" id="zCB-O2-ze1"/>
+                        <outlet property="ageButton" destination="pli-ON-15e" id="xvf-gl-muc"/>
+                        <outlet property="birthDateButton" destination="eyL-KW-Soq" id="xfm-Oa-qMq"/>
+                        <outlet property="cityTextField" destination="a24-8w-mqb" id="N57-Ce-QRg"/>
+                        <outlet property="contentHeight" destination="xKf-RC-vW3" id="cdu-GI-LKe"/>
+                        <outlet property="countyTextField" destination="84Z-by-rai" id="55N-rp-x6x"/>
+                        <outlet property="firstNameTextField" destination="Rui-x9-1Fq" id="fcD-qc-MPL"/>
+                        <outlet property="lastNameTextField" destination="7y8-Or-gUJ" id="71G-rs-O8d"/>
+                        <outlet property="residenceTextField" destination="3yg-5S-geD" id="IzS-UL-VPT"/>
+                        <outlet property="scrollView" destination="mLx-Ul-elT" id="2du-de-4mH"/>
+                        <outlet property="selectBloodButton" destination="98r-el-JAQ" id="QtL-ha-fYZ"/>
+                        <outlet property="selectWeightButton" destination="oZA-kO-Zgc" id="ce7-Ky-KLz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ngi-9h-zAE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.80000000000001" y="165.51724137931035"/>
+        </scene>
+    </scenes>
+</document>

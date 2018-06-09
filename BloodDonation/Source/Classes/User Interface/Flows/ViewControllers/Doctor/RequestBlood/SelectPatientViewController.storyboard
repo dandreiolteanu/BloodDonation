@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hKP-GK-Nmm">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Calibre-Medium.otf">
+            <string>Calibre-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Select Patient View Controller-->
+        <scene sceneID="e1a-4x-1Dw">
+            <objects>
+                <viewController id="hKP-GK-Nmm" customClass="SelectPatientViewController" customModule="BloodDonation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SBd-iz-3Ti">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Uhy-nl-uCS">
+                                <rect key="frame" x="0.0" y="44" width="375" height="768"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="patientCell" rowHeight="60" id="gwe-ME-qCa" customClass="PatientCell" customModule="BloodDonation" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gwe-ME-qCa" id="0zJ-7J-atJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="59.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Patient Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ygB-Hu-8hy">
+                                                    <rect key="frame" x="15.000000000000007" y="19.666666666666664" width="106.66666666666669" height="20.666666666666664"/>
+                                                    <fontDescription key="fontDescription" name="Calibre-Medium" family="Calibre" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="tOA-QS-Eba">
+                                                    <rect key="frame" x="246" y="8" width="89" height="45"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blood Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6eU-g1-Q6w">
+                                                            <rect key="frame" x="0.0" y="0.0" width="89" height="20.666666666666668"/>
+                                                            <fontDescription key="fontDescription" name="Calibre-Medium" family="Calibre" pointSize="20"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AB4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HTx-KQ-Pmu">
+                                                            <rect key="frame" x="29.333333333333314" y="25.666666666666664" width="30.666666666666671" height="19.333333333333336"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <color key="textColor" red="1" green="0.13725490200000001" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ygB-Hu-8hy" firstAttribute="centerY" secondItem="0zJ-7J-atJ" secondAttribute="centerY" id="MhF-7p-res"/>
+                                                <constraint firstItem="ygB-Hu-8hy" firstAttribute="leading" secondItem="0zJ-7J-atJ" secondAttribute="leadingMargin" id="fhM-Ev-zHQ"/>
+                                                <constraint firstItem="tOA-QS-Eba" firstAttribute="trailing" secondItem="0zJ-7J-atJ" secondAttribute="trailingMargin" constant="-25" id="jQK-Uf-UiT"/>
+                                                <constraint firstItem="tOA-QS-Eba" firstAttribute="centerY" secondItem="0zJ-7J-atJ" secondAttribute="centerY" id="qBG-YA-QL3"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="bloodTypeLabel" destination="HTx-KQ-Pmu" id="xP8-al-T3r"/>
+                                            <outlet property="patientNameLabel" destination="ygB-Hu-8hy" id="KHS-aW-F35"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Uhy-nl-uCS" secondAttribute="bottom" id="Gvo-KK-vnB"/>
+                            <constraint firstItem="Uhy-nl-uCS" firstAttribute="leading" secondItem="iKH-V1-CDI" secondAttribute="leading" id="JQy-Sa-eaF"/>
+                            <constraint firstItem="Uhy-nl-uCS" firstAttribute="trailing" secondItem="iKH-V1-CDI" secondAttribute="trailing" id="MaZ-DE-Xgt"/>
+                            <constraint firstItem="Uhy-nl-uCS" firstAttribute="top" secondItem="iKH-V1-CDI" secondAttribute="top" id="vWL-Iz-F2E"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iKH-V1-CDI"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="Uhy-nl-uCS" id="XQi-SG-lXw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EKp-TC-5MD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="80.799999999999997" y="139.65517241379311"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xab-nO-qhY">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Calibre-Medium.otf">
+            <string>Calibre-Medium</string>
+        </array>
+        <array key="Calibre-Semibold.otf">
+            <string>Calibre-Semibold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Donor View Controller-->
+        <scene sceneID="GGX-rb-sQa">
+            <objects>
+                <viewController id="xab-nO-qhY" customClass="DonorViewController" customModule="BloodDonation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h0S-A2-C4i">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donor" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vU7-mo-ATo">
+                                <rect key="frame" x="16" y="94" width="88.333333333333329" height="36"/>
+                                <fontDescription key="fontDescription" name="Calibre-Semibold" family="Calibre" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press the bottom button after donating, so we could track your progress." lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Idv-d7-Vt6">
+                                <rect key="frame" x="16" y="201.66666666666666" width="289" height="57.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o60-aS-0yW">
+                                <rect key="frame" x="279" y="49" width="80" height="34"/>
+                                <color key="backgroundColor" red="0.71831376903553301" green="0.71831376903553301" blue="0.71831376903553301" alpha="0.096318493150684928" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="f0i-l1-bwh"/>
+                                    <constraint firstAttribute="height" constant="34" id="hXk-Xi-2CA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="Log Out">
+                                    <color key="titleColor" red="1" green="0.13725490200000001" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="17"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="logOutButtonTapped:" destination="xab-nO-qhY" eventType="touchUpInside" id="CaY-Qo-Uei"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e5n-YE-WkU">
+                                <rect key="frame" x="55.666666666666657" y="713" width="262.66666666666674" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.13725490200000001" blue="0.3294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="JdQ-8G-gw6"/>
+                                </constraints>
+                                <state key="normal" title="Donate">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="donateButtonTapped:" destination="xab-nO-qhY" eventType="touchUpInside" id="mjD-gD-4RF"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donor Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BhE-Ov-DKR">
+                                <rect key="frame" x="16" y="130" width="104" height="21.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="MIs-w2-NFP">
+                                <rect key="frame" x="54" y="355" width="267" height="102"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icn_bag" translatesAutoresizingMaskIntoConstraints="NO" id="Cyh-u5-J1s">
+                                        <rect key="frame" x="0.0" y="0.0" width="61" height="102"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="leW-vQ-ODm">
+                                        <rect key="frame" x="86" y="23.333333333333318" width="181" height="55.333333333333343"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thanks for saving a life" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hoI-iZ-Msv">
+                                                <rect key="frame" x="0.0" y="0.0" width="181" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="56 days to go" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCC-1v-cJB">
+                                                <rect key="frame" x="0.0" y="20.333333333333371" width="181" height="35"/>
+                                                <fontDescription key="fontDescription" name="Calibre-Medium" family="Calibre" pointSize="34"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="o60-aS-0yW" firstAttribute="top" secondItem="1gg-DV-lN6" secondAttribute="top" constant="5" id="CYY-YH-bI3"/>
+                            <constraint firstItem="MIs-w2-NFP" firstAttribute="centerY" secondItem="h0S-A2-C4i" secondAttribute="centerY" id="EcV-dV-a1L"/>
+                            <constraint firstItem="e5n-YE-WkU" firstAttribute="width" secondItem="h0S-A2-C4i" secondAttribute="width" multiplier="0.7" id="EnM-eZ-bPM"/>
+                            <constraint firstItem="vU7-mo-ATo" firstAttribute="top" secondItem="1gg-DV-lN6" secondAttribute="top" constant="50" id="F1e-p8-Kn1"/>
+                            <constraint firstItem="BhE-Ov-DKR" firstAttribute="top" secondItem="vU7-mo-ATo" secondAttribute="bottom" id="KeU-u0-R7x"/>
+                            <constraint firstItem="Idv-d7-Vt6" firstAttribute="top" secondItem="BhE-Ov-DKR" secondAttribute="bottom" constant="50" id="NnB-Pl-ffT"/>
+                            <constraint firstItem="e5n-YE-WkU" firstAttribute="bottom" secondItem="1gg-DV-lN6" secondAttribute="bottom" constant="-15" id="OD4-nD-vuc"/>
+                            <constraint firstItem="BhE-Ov-DKR" firstAttribute="leading" secondItem="1gg-DV-lN6" secondAttribute="leading" constant="16" id="QIe-qm-471"/>
+                            <constraint firstItem="MIs-w2-NFP" firstAttribute="centerX" secondItem="h0S-A2-C4i" secondAttribute="centerX" id="RwA-kx-Voe"/>
+                            <constraint firstItem="e5n-YE-WkU" firstAttribute="centerX" secondItem="h0S-A2-C4i" secondAttribute="centerX" id="XWW-9X-nzk"/>
+                            <constraint firstItem="Idv-d7-Vt6" firstAttribute="leading" secondItem="1gg-DV-lN6" secondAttribute="leading" constant="16" id="aMW-yC-mDx"/>
+                            <constraint firstItem="vU7-mo-ATo" firstAttribute="leading" secondItem="1gg-DV-lN6" secondAttribute="leading" constant="16" id="eEx-55-yMg"/>
+                            <constraint firstItem="1gg-DV-lN6" firstAttribute="trailing" secondItem="o60-aS-0yW" secondAttribute="trailing" constant="16" id="rlU-gQ-ffP"/>
+                            <constraint firstItem="1gg-DV-lN6" firstAttribute="trailing" secondItem="Idv-d7-Vt6" secondAttribute="trailing" constant="70" id="rqe-cj-T9D"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1gg-DV-lN6"/>
+                    </view>
+                    <connections>
+                        <outlet property="donateButton" destination="e5n-YE-WkU" id="yrX-G8-Xrv"/>
+                        <outlet property="donationStackView" destination="MIs-w2-NFP" id="FGc-FJ-Id5"/>
+                        <outlet property="donorNameLabel" destination="BhE-Ov-DKR" id="2He-wx-wiV"/>
+                        <outlet property="middleTitleLabel" destination="Idv-d7-Vt6" id="pep-6T-uQP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lXj-um-qUe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="177" y="239"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icn_bag" width="61" height="102"/>
+    </resources>
+</document>
